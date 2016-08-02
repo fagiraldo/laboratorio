@@ -21,4 +21,11 @@ public abstract class Employee extends Person {
         this.hiringDate = hiringDate;
     }
     public abstract float paySalary();
+
+    @Override
+    public String toString() {
+        return super.toString() + "," + hiringDate.toString() ;
+    }
+    
+    
 }
