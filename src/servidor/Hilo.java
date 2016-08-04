@@ -33,8 +33,7 @@ public class Hilo implements Runnable{
       } catch (IOException ex) {
             Logger.getLogger(Hilo.class.getName()).log(Level.SEVERE, null, ex);
       }
-     
-            
+          
        //Flujos modo caracter
       this.lectura = new BufferedReader(new InputStreamReader(flujoEntrada));
       this.salida = new PrintWriter(flujoSalida);
@@ -46,12 +45,15 @@ public class Hilo implements Runnable{
         try {
         this.lectura.read(chbuff);
          System.out.println(chbuff);
+         //Interpretacion del mensaje
+         
+         
         } catch (IOException ex) {
               Logger.getLogger(Hilo.class.getName()).log(Level.SEVERE, null, ex);
         }
         
         //Logica de Negocio
-        
+        //Respuesta al usuario.
         salida.println(chbuff);
         salida.flush();
       

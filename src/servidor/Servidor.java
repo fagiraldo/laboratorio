@@ -30,8 +30,9 @@ public class Servidor {
             while(true){
               Socket cliente = servidor.accept();
               Hilo hilo = new Hilo(cliente);
+              //Creando nuevo hilo de ejecucion
               Thread ejecutar = new Thread(hilo);
-                System.out.println("Iniciando nuevo hilo");
+              System.out.println("Iniciando nuevo hilo");
               ejecutar.start();
             }
         } catch (IOException ex) {
