@@ -15,6 +15,7 @@ import java.io.IOException;
  * @author B106 PC-11
  */
 public class BaseDatos {
+    
     public void almacenar(Person person){
         FileWriter escritura = null;
         try {
